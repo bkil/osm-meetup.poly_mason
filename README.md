@@ -1,7 +1,7 @@
-# Slides for Open Source Meetup Budapest: syslog-ng development
+# Slides for OpenStreetMap meetup Budapest: Poly Mason & Sky
 
 You can view the presentation here:
-https://bkil.github.io/oss-meetup.syslog-ng.dev
+https://bkil.github.io/osm-meetup.poly_mason
 
 Improvements are welcome:
 * GitHub issues
