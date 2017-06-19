@@ -131,6 +131,11 @@ Kérdések a végén & szünetben
 				<section data-markdown style="text-align: left;"> <script type="text/template">
 #### Sokoldalúság
 * TODO: the same 3D shape from 4 angles
+* http://iris.usc.edu/outlines/papers/1998/lin-cviu98.pdf ""
+* http://www.asprs.org/a/publications/proceedings/Louisville2014/Jabari_1.pdf
+* https://scholar.google.it/scholar?q=Building+Detection
+* https://scholar.google.it/scholar?q=Building%20Detection%20from%20Satellite%20Images&btnG=&hl=en&as_sdt=0%2C5&as_vis=1
+
 				</script> </section>
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
@@ -144,7 +149,10 @@ Kérdések a végén & szünetben
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
 #### Sokoldalúság feldolgozása: Google
-* TODO
+> Those are automatically generated "generic" trees that try to approximate the size and shape of what's visible in photos, but they're not the models of the actual trees in those locations.
+> [...] new imagery rendering techniques and computer vision that let us automatically create 3D cityscapes, complete with buildings, terrain and even landscaping, from 45-degree aerial imagery
+
+https://googleblog.blogspot.hu/2012/06/never-ending-quest-for-perfect-map.html
 				</script> </section>
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
@@ -155,40 +163,63 @@ Kérdések a végén & szünetben
 * ortorektifikációs hibák
 				</script> </section>
 
+				<section>
+Building Detection and Description from a Single Intensity Image, 1998<br>
+<img class="stretch" src="img/lin-cviu98.png" />
+				</section>
+
 				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### TODO Challenge
+#### SpaceNet Challenge
 * DigitalGlobe által szponzorált verseny
 * nevezés: nyílt forrású épület körvonalazási algoritmusok
+* felszín: Rio de Janeiro
 * cél: humanitárius
-				</script> </section>
+* https://github.com/SpaceNetChallenge/
+* http://explore.digitalglobe.com/spacenet
+                                </script> </section>
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### Challenge #1 forduló
-* TODO 2016-12-31
-* TODO: optimalizált metrika
+#### SpaceNet Challenge 1. forduló
+* eredmények: 2017-02-08
+* felbontás: 50cm 16-bit PAN, 1.2m 8*16-bit MUL
+* optimalizált metrika: területek metszete osztva területek uniója (Jaccard), F1-score
+* https://medium.com/the-downlinq/the-spacenet-metric-612183cc2ddb
+* nyertes: 0.26
 				</script> </section>
 
-				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### Challenge #1 eredmény
-* TODO %, példa feldolgozás
-				</script> </section>
+				<section>
+Kapott adatok<br>
+<img class="stretch" src="img/sn0-gt.png" />
+				</section>
+
+				<section>
+Metrika<br>
+<img class="stretch" src="img/sn0-metric.png" />
+				</section>
+
+				<section>
+1. hely<br>
+<img class="stretch" src="img/sn1-1st.png" />
+				</section>
+
+				<section>
+2. hely<br>
+<img class="stretch" src="img/sn1-2nd.png" />
+				</section>
+
+				<section>
+5. hely<br>
+<img class="stretch" src="img/sn1-5th.png" />
+				</section>
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### Challenge #2 forduló
-* TODO 2017-06-20
-* optimalizált metrika: területek metszete osztva területek uniója
+#### SpaceNet Challenge 2. forduló
 * jobb minőségű tanító alapigazság halmaz
-* nagyobb felbontású képek
-				</script> </section>
-
-				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### Challenge #2 eredmény
-* TODO %, példa feldolgozás
-				</script> </section>
-
-				<section data-markdown style="text-align: left;"> <script type="text/template">
-#### Challenge 2. konklúzió
-* TODO
+* 30cm felbontású képek
+* csapatjáték engedélyezett
+* külső tanító adatforrás engedélyezett
+* jelenlegi nyertes: 0.69 (nem végleges)
+* várható eredmények: 2017 június
 				</script> </section>
 
 				<section data-markdown style="text-align: left;"> <script type="text/template">
